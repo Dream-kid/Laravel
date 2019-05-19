@@ -1,7 +1,20 @@
 
 @extends('layouts.master')
 @section('content')
+<head>
+<style>
+.bg-light11 {
+  width: 300px;
+  height: 50px;
+  background-color: yellow;
+  border: 1px solid black;
+  text-align: center;
+}
 
+
+}
+</style>
+</head>
 <div class="row">
   <div class="col-md-4">
 
@@ -10,7 +23,7 @@
 <div class="width">
 <h2>
 </br>
-<div class="temppp-alu">
+<div class="bg-light11">
 
 Personal profile
 </div>
@@ -41,8 +54,7 @@ if ($link->connect_error) {
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_array($result)){
                 if($row['id']==$NAME){
-  //echo '<img src="images/products/1.png"/>';
-  echo '<img src="images/products/'.$row['Image'] . '" alt="error" width="200" height="100">';
+  echo '<img src="images/products/'.$row['Image'] . '" alt="error" width="200" height="150">';
             }
           }
             mysqli_free_result($result);
@@ -56,13 +68,12 @@ if ($link->connect_error) {
       if(mysqli_num_rows($result) > 0){
           while($row = mysqli_fetch_array($result)){
               if($row['id']==$NAME){
-                  echo  $row['title'] ."<br>".$row['price'];
+                  echo  "<br>"."Name:".$row['title'] ."<br>".$row['price'];
           }
         }
           mysqli_free_result($result);
       }
   }
-
 
 
   mysqli_close($link);
