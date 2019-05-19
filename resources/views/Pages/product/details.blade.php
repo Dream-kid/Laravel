@@ -1,5 +1,23 @@
 
+@extends('layouts.master')
+@section('content')
 
+<div class="row">
+  <div class="col-md-4">
+
+</div>
+<div class="col-md-8">
+<div class="width">
+<h2>
+</br>
+<div class="temppp-alu">
+
+Personal profile
+</div>
+</h2>
+<div class="row">
+
+<div class='container margin-top-20'>
 <?php
 $servername = "localhost";
 $username = "root";
@@ -15,6 +33,21 @@ if ($link->connect_error) {
 
 
   $NAME=$_REQUEST['Name'];
+  //  echo '<img src="images/products/1.png"/>';
+    $sql = "SELECT * FROM product_images ";
+
+    if($result = mysqli_query($link, $sql)){
+
+        if(mysqli_num_rows($result) > 0){
+            while($row = mysqli_fetch_array($result)){
+                if($row['id']==$NAME){
+  //echo '<img src="images/products/1.png"/>';
+  echo '<img src="images/products/'.$row['Image'] . '" alt="error" width="200" height="100">';
+            }
+          }
+            mysqli_free_result($result);
+        }
+    }
 
   $sql = "SELECT * FROM products ";
 
@@ -29,24 +62,15 @@ if ($link->connect_error) {
           mysqli_free_result($result);
       }
   }
-//  echo '<img src="images/products/1.png"/>';
-  $sql = "SELECT * FROM product_images ";
 
-  if($result = mysqli_query($link, $sql)){
-
-      if(mysqli_num_rows($result) > 0){
-          while($row = mysqli_fetch_array($result)){
-              if($row['id']==$NAME){
-//echo '<img src="images/products/1.png"/>';
-echo '<img src="images/products/'.$row['Image'] . '" alt="error" width="200" height="100">'; 
-          }
-        }
-          mysqli_free_result($result);
-      }
-  }
 
 
   mysqli_close($link);
 
-
 ?>
+</div>
+</div>
+</div>
+</div>
+</div>
+@endsection

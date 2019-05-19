@@ -4,7 +4,7 @@
 }
 
 .margin-top-20{
-	
+
 	margin-top: 20px;
 }
 .feature-img
@@ -16,4 +16,9 @@
 	padding: 20px;
 	margin-top: 20px;
 	background:#02aadd;
+}
+
+.temppp-alu {
+	background-color:#02aadd!important;
+
 }
