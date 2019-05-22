@@ -1,8 +1,5 @@
 git init
 git add .
-git status
-git commit -am"new commit"
-git remote add origin https://github.com/Dream-kid/Laravel-Project.git
+git commit -m "first commit"
+git clone origin https://github.com/Dream-kid/Laravel-Project.git
 git push -u origin master
-
-
