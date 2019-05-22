@@ -7,10 +7,7 @@ use App\product;
 
 class pagescontroller extends Controller
 {
-    public function leaderboard()
-    {
-      return view('Pages.product.leaderboard');
-    }
+
      public function contact()
     {
       return view('Pages.contact');
@@ -51,7 +48,10 @@ class pagescontroller extends Controller
     {
       return view('Pages.product.deletethem');
     }
-
+    public function leaderboard()
+    {
+      return view('Pages.product.leaderboard');
+    }
     public function products()
     {
     	$products = product::orderBy('user_id','asc')->get();

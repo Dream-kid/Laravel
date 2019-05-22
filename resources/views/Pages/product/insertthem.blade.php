@@ -104,7 +104,8 @@ if ($result = mysqli_query($link, $sql)) {
         mysqli_free_result($result);
     }
 
-$sql="INSERT INTO submission VALUES ('$temp',1,1),('$temp',2,2),('$temp',3,3),('$temp',4,4),('$temp',5,5),('$temp',1,6),('$temp',2,7),('$temp',1,8)";
+$sql="INSERT INTO submission VALUES ('$temp',1,1,1),('$temp',2,2,0),('$temp',3,3,0),('$temp',4,4,0),('$temp',5,5,0),('$temp',1,6,1),
+('$temp',2,7,0),('$temp',1,8,1)";
 
 
 if ($link->query($sql) === TRUE) {
@@ -127,7 +128,7 @@ if ($link->query($sql) === TRUE) {
 		</br>
 		</br>
 		</br>
-	
+
 </div>
 </div>
 </div>

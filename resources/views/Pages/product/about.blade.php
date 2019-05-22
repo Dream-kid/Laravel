@@ -142,7 +142,7 @@ amongst your friends.
 4. A global leaderboard along with a unique rating which includes
 submissions from all the websites.
 <br>
-The goal is to keep people motivated in algorithmic programming
+5.The goal is to keep people motivated in algorithmic programming
 and solve more and more problems. And yeah we do have a
 referral program.
 
