@@ -107,8 +107,9 @@ background-color: #baf4c8;
 <br>
 <br>
 <div class="header">
-  <h2>Contact</h2>
+  <h2>About</h2>
 </div>
+
 
 <div class="row">
 		&nbsp&nbsp&nbsp
@@ -119,25 +120,48 @@ background-color: #baf4c8;
   <div class="leftcolumn">
 
     <div class="card">
-			<img src="images/products/10.png" alt="error" width="200" height="250">
-
-				<h4>
+				<h5>
       <p>
-				<br>
-Name: Sourav Chakraborty
+
+				Ranking Management System is a web based
+application that is designed to keep track of your friends
+submissions on various competitive websites(Codeforces, UVa, Spoj, HackerEarth, HackerRank).
+And that is just not it. It has a lot of other features —
 <br>
 <br>
-University: Khulna University Of Engineering And Technology
+1. Streak notifier of your friends.
 <br>
+2. Feel like solving algorithmic problems — Why go to Codeforces
+and search for a problem? Solve problems from across all the
+platforms.
 <br>
-Email: Sourovchakraborty420@gmail.com
+3. Want to solve problems that other coders are solving recently
+- We got a list of trending problems both globally and also
+amongst your friends.
+<br>
+4. A global leaderboard along with a unique rating which includes
+submissions from all the websites.
+<br>
+The goal is to keep people motivated in algorithmic programming
+and solve more and more problems. And yeah we do have a
+referral program.
+
 </p>
-</h4>
-  </div>
+</h5>
+
+    </div>
+
   </div>
 </div>
 </body>
 </html>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 </div>
 </div>
